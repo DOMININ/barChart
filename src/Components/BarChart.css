@@ -1,0 +1,48 @@
+.barchart {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #333;
+  width: 600px;
+  max-width: 600px;
+  min-height: 400px;
+}
+
+.barchart-list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  color: #fff;
+  overflow-x: auto;
+}
+
+.barchart-item {
+  position: relative;
+  width: 50px;
+  margin-right: 10%;
+}
+
+.bar {
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+  background-color: #7069fd;
+  border-radius: 2%;
+}
+
+.barchart-item span {
+  position: absolute;
+  bottom: -25px;
+  left: 11px;
+}
