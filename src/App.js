@@ -1,4 +1,4 @@
-import BarChart from './Components/BarChart'
+import BarChart from './Components/BarChart/BarChart'
 import { data } from './utils/data.json'
 
 function App() {
