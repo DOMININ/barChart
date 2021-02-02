@@ -13,7 +13,7 @@ const BarChart = ({ numbers }) => {
     <div className="barchart">
       <ul className="barchart-list">
         {numbers.map((number, id) => (
-          <li className="barchart-item" key={number + id}>
+          <li className="barchart-item" key={id}>
             <div className="bar" style={{ height: `${findPercent(number, maxNumber)}%` }}></div>
             <span>{number}</span>
           </li>
