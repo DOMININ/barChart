@@ -2,24 +2,24 @@ import React from 'react'
 
 import './BarChart.css'
 
-const findMaxNumberInObj = (data) => {
-  return Math.max(...data.map((obj) => obj.qty), 0)
+const findMaxNumberInObj = (numbers) => {
+  return Math.max(...numbers, 0)
 }
 
 const findPercent = (number, maxNumber) => {
   return (100 * number) / maxNumber
 }
 
-const BarChart = ({ data }) => {
-  const maxObjNumber = findMaxNumberInObj(data)
+const BarChart = ({ numbers }) => {
+  const maxObjNumber = findMaxNumberInObj(numbers)
 
   return (
     <div className="barchart">
       <ul className="barchart-list">
-        {data.map((el, id) => (
-          <li className="barchart-item" key={el.qty + id}>
-            <div className="bar" style={{ height: `${findPercent(el.qty, maxObjNumber)}%` }}></div>
-            <span>{el.qty}</span>
+        {numbers.map((number, id) => (
+          <li className="barchart-item" key={number + id}>
+            <div className="bar" style={{ height: `${findPercent(number, maxObjNumber)}%` }}></div>
+            <span>{number}</span>
           </li>
         ))}
       </ul>
