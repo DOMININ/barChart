@@ -3,7 +3,9 @@ import React from 'react'
 import './BarChart.css'
 
 const findPercent = (number, maxNumber) => {
-  return (100 * number) / maxNumber
+  const hundredPercent = 100
+
+  return (hundredPercent * number) / maxNumber
 }
 
 const BarChart = ({ numbers }) => {
